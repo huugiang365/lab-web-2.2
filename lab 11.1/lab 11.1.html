@@ -1,0 +1,169 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="lab 11.1.css">
+    <title>lab 11.1</title>
+</head>
+<body>
+  <h1 id="title">Mẫu khảo sát freeCodeCamp
+</h1>
+<p id="description"> Cảm ơn bạn đã dành thời gian để giúp chúng tôi cải thiện nền tảng </p>
+<form id="survey-form">
+  <label id="name-label"> Tên </label><br>
+  <input id="name" type="text" required placeholder="Tên của bạn"><br>
+  <label id="email-label"> E-mail</label><br>
+  <input id="email" type="email" required placeholder="Nhập email của bạn"><br>
+  <label id="number-label"> Tuổi</label><br>
+  <input id="number" type="number" min="0" max="1000000000000000000" placeholder="Tuổi"><br>
+
+ 
+  <div class="form-group">
+<p> Lựa chọn nào mô tả đúng nhất vai trò hiện tại của bạn?</P>
+<select id="dropdown" name="role" class="form-control" required>
+  <option disabled selected value>
+    <font>
+      Chọn vai trò hiện tại
+    </font>
+  </option>
+  <option value="student">
+    <font> Học sinh</font>
+  </option>
+  <option value="job">
+    <font> Công việc toàn thời gian</font>
+  </option>
+  <option value="learnner">
+    <font> Người học toàn thời gian</font>
+  </option>
+  <option value="preferNo">
+    <font> Không thích nói</font>
+  </option>
+  </option>
+  <option value="other">
+    <font> Khác</font>
+  </option>
+
+</select>
+</div>
+<div class="form-group" >
+  <p>
+    <font>
+      Bạn có giới thiệu freeCodeCamp cho bạn bè không?
+    </font>
+  </p>
+  <label>
+    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>
+    <font> Chắc chắn</font>
+  </label>
+  <label>
+    <input name="user-recommend" value="maybe" type="radio" class="input-radio">
+    <font> Có lẽ</font>
+  </label>
+  <label>
+    <input name="user-recommend" value="not-sure" type="radio" class="input-radio">
+    <font>Không chắc</font>
+  </label>
+
+
+</div>
+
+<div class="form-group">
+  <p>
+    <font>Tính năng yêu thích của bạn về freeCodeCamp là gì?</font>
+  </p>
+  <select id="most-like" name="mostlike" class="form-control" required>
+    <option disabled selected value>
+      <font> Chọn một tùy chọn</font>
+    </option>
+    <option value="challenges">
+      <font>Thử thách</font>
+    </option>
+    <option value="projects">
+      <font>Dự án</font>
+    </option>
+    <option value="community">
+      <font>Cộng đồng</font>
+    </option>
+    <option value="opensource">
+      <font> Mã nguồn mở</font>
+    </option>
+  </select>
+</div>
+
+<div class="form-group">
+  <p>
+    <font>Bạn muốn thấy điều gì được cải thiện</font>
+    <span class="clue"><font>(Đánh dấu tất cả những gì áp dụng)</font></span>
+  </p>
+  
+  <label> 
+    <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+  <font>Dự án đầu cuối</font>
+  </label>
+  <label> 
+    <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+  <font> Dự án phụ trợ</font>
+  </label>
+  <label> 
+    <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">
+  <font>Trực quan hóa dữ liệu</font>
+  </label>
+  <label> 
+    <input name="prefer" value="challenges" type="checkbox" class="input-checkbox">
+  <font> Thử thách</font>
+  </label>
+  <label> 
+    <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">
+  <font>Cộng đồng mã nguồn mở</font>
+  </label>
+  <label> 
+    <input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">
+  <font>Phòng trợ giúp Gitter</font>
+  </label>
+  <label> 
+    <input name="prefer" value="video" type="checkbox" class="input-checkbox">
+  <font>Video</font>
+  </label>
+  <label> 
+    <input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox">
+  <font>Gặp gỡ thành phố</font>
+  </label>
+  <label> 
+    <input name="prefer" value="wiki" type="checkbox" class="input-checkbox">
+  <font>Wiki</font>
+  </label>
+  <label> 
+    <input name="prefer" value="forum" type="checkbox" class="input-checkbox">
+  <font>Diễn đàn</font>
+  </label>
+  <label> 
+    <input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">
+  <font>Các khóa học bổ sung</font>
+  </label>
+  
+</div>
+
+<div class="form-group">
+  <p><font> Bất kỳ ý kiến &ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;hoặc đề nghị?
+    </font>
+    </p>
+  <textarea id="comments" class="input-textarea" name="comment" placeholder="Nhập bình luận của bạn ở đây"></textarea>
+</div>
+
+<div class="form-group">
+  <button type="submit" id="submit" class="submit-button" >
+    <font>Nộp</font>
+  </button>
+</div>
+
+
+</form>
+    
+</body>
+</html>
+
+

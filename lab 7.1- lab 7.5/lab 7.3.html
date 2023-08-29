@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 7.3</title>
+</head>
+<body>
+
+    <!--Lab 7.3. Xác định vị trí của một Element so với phần tử cha của nó 
+            sử dụng Absolute Positioning.
+            Cố định phần tử #searchbar nằm góc trên bên phải của phần tử section 
+            bằng cách khai báo thuộc tính positionlà absolute. 
+            Chỉ định top và right là 50 pixel .-->
+    
+            <style>
+                #searchbar {
+                    position: absolute;
+                    top: 50px;
+                    right: 50px;
+                }
+                
+                section {
+                    position: relative;
+                }
+                </style>
+                          
+                <h1>Welcome!</h1>
+                <section>
+                    <form id="searchbar">
+                        <label for="search">Search:</label>
+                        <input type="search" id="search" name="search">
+                        <input type="submit" name="submit" value="Go!">
+                    </form>
+                </section>
+    
+</body>
+</html>

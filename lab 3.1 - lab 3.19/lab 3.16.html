@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 3.16</title>
+</head>
+<body>
+
+    <!--Lab 3.16. Tạo tập hợp các Radio Button
+Người ta khuyến cáo cách tốt nhất là thiết lập một thuộc tính for trong phần tử label.
+Phần tử này phải có giá trị trùng khớp với 
+giá trị thuộc tính id của phần tử input để cho phép các công nghệ trợ năng
+tạo một mối quan hệ liên kết giữa nhãn và phần tử input có liên quan-->
+
+<h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+
+    <label for="indoor">
+      <input id="indoor" type="radio" name="indoor-outdoor">Indoor
+    </label>
+    <label for="outdoor">
+      <input id="outdoor" type="radio" name="indoor-outdoor">Outdoor
+    </label>
+  </form>
+</main>
+    
+</body>
+</html>

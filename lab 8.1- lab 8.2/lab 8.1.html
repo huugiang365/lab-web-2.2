@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 8.1</title>
+</head>
+<body>
+
+    <!--Lab 8.1. Đẩy element sang trái hoặc phải với thuộc tính Float.
+  Nó sẽ hoạt động tốt với một bố cục hai cột, 
+  chẳng hạn như các phần tử sectionvà asidebên cạnh nhau. Chỉ định float:left; 
+  cho phần tử #left và float:right; cho phần tử #right-->
+
+  <head>
+    <style>
+      #left {
+  float: left;
+        width: 50%;
+      }
+      #right {
+  float: right;
+        width: 40%;
+      }
+      aside, section {
+        padding: 2px;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome!</h1>
+    </header>
+    <section id="left">
+      <h2>Content</h2>
+      <p>Good stuff</p>
+    </section>
+    <aside id="right">
+      <h2>Sidebar</h2>
+      <p>Links</p>
+    </aside>
+  </body>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 7.4</title>
+</head>
+<body>
+
+    <!--Lab 7.4. Xác định vị trí của một Element so với 
+        cửa sổ trình duyệt sử dụng Fixed Positioning.
+    Thanh điều hướng trong code được gắn nhãn với một id là navbar. 
+    Thay đổi giá trị của thuộc tính position thành 
+    fixed và chỉ định khoảng cách là 0 pixel từ topvà 0 pixel từ left. 
+    Sau khi bạn đã thêm code, 
+    hãy cuộn cửa sổ xem trước để xem thử thanh điều hướng ở vị trí như thế nào.-->
+
+
+    <style>
+        body {
+          min-height: 150vh;
+        }
+        #navbar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color: #767676;
+        }
+        nav ul {
+          margin: 0px;
+          padding: 5px 0px 5px 30px;
+        }
+        nav li {
+          display: inline;
+          margin-right: 20px;
+        }
+        a {
+          text-decoration: none;
+        }
+      </style>
+      <body>
+        <header>
+          <h1>Welcome!</h1>
+          <nav id="navbar">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <p>I shift up when the #navbar is fixed to the browser window.</p>
+      </body>
+    
+</body>
+</html>
